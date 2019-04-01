@@ -1,0 +1,15 @@
+html {
+    font: 16px/1.5 sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: calc( var(--sizing-ws-base) / 3 );
+}
+
+p, ul, ol, dl, table {
+    margin-bottom: var(--sizing-ws-base);
+}
+
+ul, ol {
+    padding-left: var(--sizing-ws-base);
+}

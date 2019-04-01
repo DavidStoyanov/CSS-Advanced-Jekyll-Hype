@@ -2,10 +2,13 @@ title: Hype
 email: your-email@example.com
 description: This is my blog
 destination: docs
-baseurl: "/FrontEnd-Project-Hype" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+incremental: false
+baseurl: ""
+#baseurl: "/FrontEnd-Project-Hype"
+url: ""
 twitter_username: jekyllrb
 github_username:  jekyll
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package.json, package-lock.json, README.md]
 
 # Build settings
 markdown: kramdown
