@@ -18,7 +18,9 @@
   "homepage": "https://github.com/DavidStoyanov/FrontEnd-Project-Hype#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "child_process": "^1.0.2",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0"
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-exec": "^3.0.2"
   }
 }

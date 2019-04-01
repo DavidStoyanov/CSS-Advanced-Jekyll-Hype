@@ -5,5 +5,5 @@
 body {
     background-color: var(--color-main-bgrd, #000);
     color: var(--color-main-text, #FFF);
-    padding: 2rem;
+    padding: 3rem;
 }
