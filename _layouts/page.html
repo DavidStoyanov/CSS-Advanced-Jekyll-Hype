@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 </head>
 <body>
-<nav>
-    <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
-</nav>
-<h1>{{ page.title }}</h1>
-<section>
-    {{ content }}
-</section>
-<footer>
-    &copy; to me
-</footer>
+
+    <header class="site-header">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        {% include navigation.html %}
+    </header>
+
+    <main class="site-content">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        &copy; to DS
+    </footer>
 </body>
 </html>

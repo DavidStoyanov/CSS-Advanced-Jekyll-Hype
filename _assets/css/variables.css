@@ -1,6 +1,9 @@
 :root {
-    --color-main-bgrd: #800;
-    --color-main-text: #FFF;
+    --primary-color: #275468;
+    --secondary-color: #FFC701;
+    --default-color: #FFFFFF;
+    --footer-color: #333333;
 
-    --sizing-ws-base: 1.5em;
+    --color-basic-border: #CCCCCC;
+    --sizing-basic-border: 1px;
 }

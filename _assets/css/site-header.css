@@ -1,0 +1,17 @@
+.site-header {
+    background-color: var(--primary-color);
+}
+
+.site-header h1 a {
+    color: var(--default-color);
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.site-header nav {
+
+}
+
+.site-header nav ul {
+
+}

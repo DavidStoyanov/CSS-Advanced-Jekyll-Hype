@@ -1,0 +1,21 @@
+.site-nav {
+    border-width: var(--sizing-basic-border) 0;
+    border-style: solid;
+    border-color: var(--color-basic-border);
+}
+
+.site-nav ul {
+    display: flex;
+}
+
+.site-nav li {
+    display: block;
+    list-style-type: none;
+}
+
+.site-nav a {
+    color: var(--secondary-color);
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
