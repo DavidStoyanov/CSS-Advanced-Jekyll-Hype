@@ -1,3 +1,9 @@
+.toggle-nav {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .site-nav {
     border-width: var(--sizing-basic-border) 0;
     border-style: solid;
@@ -5,7 +11,7 @@
 }
 
 .site-nav ul {
-    display: flex;
+    margin: 0;
 }
 
 .site-nav li {
@@ -18,4 +24,79 @@
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
+}
+
+
+/* Mobile */
+@media (max-width: 599px) {
+    .site-nav > ul{
+        display: none;
+        padding: 0.5em 0;
+        padding-left: 1em;
+    }
+
+    .site-nav ul li{
+        padding-bottom: 0.5em;
+    }
+
+    .site-nav ul li:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        padding: 1em 2em;
+        cursor: pointer;
+        border-bottom: var(--sizing-basic-border) solid var(--color-basic-border);
+    }
+
+    .nav-toggle span.menu-dropdown {
+        padding-left: 0.5em;
+    }
+
+    /* Menu */
+    .nav-toggle i.nav-close {
+        display: none;
+    }
+
+    .nav-toggle i.nav-open {
+        display: block;
+    }
+
+    .toggle-nav:checked + .site-nav ul {
+        display: block;
+    }
+
+    .toggle-nav:checked + .site-nav .nav-toggle i.nav-open {
+        display: none;
+    }
+
+    .toggle-nav:checked + .site-nav .nav-toggle i.nav-close {
+        display: block;
+    }
+
+    /* no select text */
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    }
+}
+
+/* Desktop */
+@media (min-width: 600px) {
+    .site-nav ul{
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
 }

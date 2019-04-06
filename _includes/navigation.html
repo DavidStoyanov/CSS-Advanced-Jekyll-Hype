@@ -1,5 +1,21 @@
+<input type="checkbox" class="toggle-nav" id="toggle-nav">
 <nav class="site-nav">
+    <label for="toggle-nav" class="nav-toggle noselect">
+        <i class="fas fa-bars nav-open"></i>
+        <i class="fas fa-times nav-close"></i>
+        <span class="menu-dropdown">Menu</span>
+    </label>
     <ul>
+        {% for page in site.pages %}
+        {% if page.url != '/feed.xml' and page.url != '/' %}
+        <li>
+            <a href="{{ page.url }}">
+                <span class="title">{{ page.title }}</span>
+                <span class="date">{{ page.date | date_to_string }}</span>
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
         {% for page in site.pages %}
         {% if page.url != '/feed.xml' and page.url != '/' %}
         <li>
