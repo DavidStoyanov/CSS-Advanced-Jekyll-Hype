@@ -7,6 +7,14 @@
     color: var(--default-color);
     padding: 0.5em 1em;
     text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+
+.site-header h1 a:hover,
+.site-header h1 a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    outline: none;
 }
 
 .site-header nav {
