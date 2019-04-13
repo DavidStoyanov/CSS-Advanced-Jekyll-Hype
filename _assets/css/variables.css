@@ -1,6 +1,10 @@
 :root {
     --primary-color: #275468;
+    --primary-color-rgba: rgba(39, 84, 104, 0.6);
+
     --secondary-color: #FFC701;
+    --secondary-color-rgba: rgba(255, 199, 1, 0.6);
+
     --default-color: #FFFFFF;
     --footer-color: #333333;
 

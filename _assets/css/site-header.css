@@ -1,11 +1,51 @@
 .site-header {
-    background-color: var(--primary-color);
+    display: block;
+    position: relative;
     font-family: Verdana, sans-serif;
 }
 
+.site-header.banner {
+    background-image: url("https://images.unsplash.com/photo-1549383625-61676f103009?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.site-header.banner:after {
+    display: block;
+    content: '';
+    padding-top: calc(( 9 / 16) * 100%);
+}
+
+.site-header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+}
+
+.site-tittle {
+    padding: 0;
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.site-nav {
+    margin-right: auto;
+}
+
+.site-header a {
+
+}
+
 .site-header h1 a {
+    display: block;
     color: var(--default-color);
-    padding: 0.5em 1em;
+    /*padding: 0.5em 0;*/
     text-decoration: none;
     transition: color 0.3s ease-in;
 }

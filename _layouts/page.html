@@ -7,9 +7,16 @@
 </head>
 <body class="{{ page.body_class }} {{ page.title | slugify }}">
 
-    <header class="site-header">
-        <h1><a href="/">{{ site.title }}</a></h1>
-        {% include navigation.html %}
+    <header class="site-header banner">
+        <div class="inner">
+            <h1 class="site-tittle">
+                <a href="/">{{ site.title }}</a>
+            </h1>
+
+            {% include navigation.html %}
+
+            <a class="button button-primary" href="#">Find us</a>
+        </div>
     </header>
 
     <main class="site-content">
@@ -17,7 +24,7 @@
     </main>
 
     <footer class="site-footer">
-        <p class="con-state">&copy; to D.Stoyanov</p>
+        <p class="con-state">&copy; to DStoyanov</p>
     </footer>
 
 </body>

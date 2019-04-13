@@ -110,6 +110,13 @@
         position: relative;
     }
 
+    .site-nav > ul ul li {
+        margin-top: 0.5rem;
+        background-color: var(--primary-color-rgba);
+        border-radius: 0.3rem;
+        overflow: hidden;
+    }
+
     .site-nav li:hover > ul{
         opacity: 0.9;
         pointer-events: all;
@@ -117,7 +124,6 @@
     }
 
     .site-nav > ul ul {
-        background-color: var(--primary-color);
         display: block;
         padding-left: 0;
         position: absolute;
@@ -126,9 +132,9 @@
         pointer-events: none;
         transform: rotate3d(0, 1, 0, 3.142rad);
         transition: opacity 0.2s ease-in, transform 0.3s ease-out;
-        border-bottom-left-radius: 0.3rem;
-        border-bottom-right-radius: 0.3rem;
-        box-shadow: 0 0.3rem 0.5rem 0.5rem rgba(0,0,0,0.3);
+        /*border-bottom-left-radius: 0.3rem;*/
+        /*border-bottom-right-radius: 0.3rem;*/
+        /*box-shadow: 0 0.3rem 0.5rem 0.5rem rgba(0,0,0,0.3);*/
         overflow: hidden;
     }
 
