@@ -12,10 +12,17 @@
 }
 
 /*noinspection CssInvalidPropertyValue*/
-.site-header.banner:after {
+.site-header.banner.banner-large:after {
     display: block;
     content: '';
     padding-top: calc(( 9 / 16) * 100%);
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.site-header.banner.banner-small:after {
+    display: block;
+    content: '';
+    padding-top: calc(( 9 / 32) * 100%);
 }
 
 .site-header .inner {
